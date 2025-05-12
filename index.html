@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Hello World</title>
+  <title>Site Under Maintenance</title>
   <style>
     * {
       margin: 0;
@@ -11,78 +11,49 @@
     }
 
     body {
+      height: 100vh;
+      background: linear-gradient(to right, #4CAF50, #2c3e50);
       font-family: Arial, sans-serif;
       display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    header {
-      background-color: #4CAF50;
-      color: white;
-      padding: 20px;
+      align-items: center;
+      justify-content: center;
       text-align: center;
+      color: #fff;
     }
 
-    .content-wrapper {
-      flex: 1;
-      display: flex;
+    .message {
+      animation: fadeIn 2s ease-in-out;
     }
 
-    .sidebar {
-      width: 220px;
-      background-color: #2c3e50;
-      padding-top: 20px;
-      height: calc(100vh - 100px); /* header + footer = 100px */
-      position: sticky;
-      top: 0;
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+      animation: bounce 1.5s infinite;
     }
 
-    .sidebar ul {
-      list-style-type: none;
-      padding: 0;
+    p {
+      font-size: 1.2rem;
     }
 
-    .sidebar ul li {
-      padding: 15px 20px;
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
-    .sidebar ul li a {
-      color: white;
-      text-decoration: none;
-      display: block;
-      font-weight: bold;
-    }
-
-    .sidebar ul li a:hover {
-      background-color: #34495e;
-    }
-
-    main {
-      flex: 1;
-      padding: 20px;
-      background-color: #ecf0f1;
-    }
-
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 10px;
+    @keyframes bounce {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
     }
   </style>
 </head>
 <body>
-
-  <header>
-    <h2>My Website Header</h2>
-  </header>
-
-  <div class="content-wrapper">
-    <nav class="sidebar">
-      <ul>
-        <li><a href="#">🏠 Home</a></li>
-        <li><a href="#">ℹ️ About</a></li>
-        <li><a href="#">🛠️ Services</a></li>
-        <li><a href="#">📞 Contact</a></li>
-        <li
+  <div class="message">
+    <h1>🚧 Updating Our Website 🚧</h1>
+    <p>We're working hard to bring you a better experience. Please check back soon!</p>
+  </div>
+</body>
+</html>
