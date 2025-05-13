@@ -1,0 +1,49 @@
+
+<!-- About Start -->
+<div data-aos="animation_name" class="container-fluid">
+    <div class="container">
+        <div class="row g-5 align-items-center">
+            <!-- Image Section -->
+            <div class="col-lg-6 wow fadeIn" [attr.data-wow-delay]="'0.1s'">
+                <div class="">
+                    <img class="img-fluid" *ngIf="imageSrc" [src]="imageSrc" alt="About Image">
+                </div>
+            </div>
+            <!-- Content Section -->
+            <div class="col-lg-6 wow fadeIn" [attr.data-wow-delay]="'0.5s'">
+                <div class="btn btn-sm border rounded-pill text-primary px-3 mb-3">{{ 'ABOUT_US' | translate }}</div>
+                <h1 class="mb-4">
+                    {{ 'WELCOME_MESSAGE' | translate }}
+                </h1>
+                <p class="mb-4">{{ 'about_page.p1' | translate }}</p>
+                <p class="mb-4">
+                    {{ 'about_page.p2' | translate }}
+                </p>
+                <p class="mb-4">
+                    {{ 'about_page.p3' | translate }}
+                </p>
+               
+                <div class="d-flex flex-column flex-md-row align-items-center mt-4">
+                    <!-- Read More Button (centered on mobile) -->
+                    <div class="mb-3 mb-md-0 text-center text-md-start">
+                      <a class="btn btn-primary rounded-pill px-4 me-md-3" routerLink="/about">{{ 'READ_MORE' | translate }}</a>
+                    </div>
+                  
+                    <!-- Social Icons (stacked below on mobile) -->
+                    <div class="d-flex justify-content-center justify-content-md-start flex-wrap">
+                      <a class="btn btn-outline-primary btn-square me-2 mb-2" href="https://x.com/sharpInnvo1351"><i class="fab fa-twitter"></i></a>
+                      <a class="btn btn-outline-primary btn-square me-2 mb-2" href="https://www.facebook.com/profile.php?id=61556338118947"><i class="fab fa-facebook-f"></i></a>
+                      <a class="btn btn-outline-primary btn-square me-2 mb-2" href="https://www.instagram.com/sharpinnovations2104/"><i class="fab fa-instagram"></i></a>
+                      <a class="btn btn-outline-primary btn-square mb-2" href="https://www.linkedin.com/company/sharp-innovations-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A7%D8%A8%D8%AA%D9%83%D8%A7%D8%B1%D8%A7%D8%AA-%D8%AD%D8%A7%D8%AF%D8%A9"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                  </div>
+                  
+            </div>
+            <app-core-service></app-core-service>
+    </div>
+</div>
+<!-- About End -->
+
+ <feature *ngIf="!isHome"></feature>
+ <!-- <team *ngIf="!isHome"></team> -->
+ <newsletter *ngIf="!isHome"></newsletter>

@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "DIN Next LT Arabic Light";
+  src: url("https://db.onlinewebfonts.com/t/d78f5d2c76185fa07aaf8dd729eef33e.eot");
+  src: url("https://db.onlinewebfonts.com/t/d78f5d2c76185fa07aaf8dd729eef33e.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/d78f5d2c76185fa07aaf8dd729eef33e.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/d78f5d2c76185fa07aaf8dd729eef33e.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/d78f5d2c76185fa07aaf8dd729eef33e.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/d78f5d2c76185fa07aaf8dd729eef33e.svg#DIN Next LT Arabic Light")format("svg");
+}
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+body.rtl {
+  .me-3 {
+    margin-left: 1rem !important;
+}
+  font-family: "DIN Next LT Arabic Light";
+  direction: rtl;
+  text-align: right;
+  font-size: 14px;
+  @media (min-width: 992px) {
+    .text-lg-start {
+        text-align: right !important;
+    }
+}
+@media (min-width: 992px) {
+  .text-lg-end {
+      text-align: left !important;
+  }
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  float: right;
+  padding-left: 0.5rem;
+ 
+}
+.navbar .dropdown-toggle::after {
+
+  margin-right: 9px;
+}
+
+  .navbar .navbar-nav .nav-link {
+    margin-left: 13px;
+
+    padding: 0;
+    color: rgba(255, 255, 255, .7);
+    outline: none;
+  }
+
+  .ms-auto {
+    margin-right: auto !important;
+  }
+
+  // .ms-auto {
+  //   margin-left: unset !important;
+  // }
+
+  .navbar-brand {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-left: 1rem;
+    font-size: 1.25rem;
+    white-space: nowrap;
+  }
+  .service-menu{
+    font-size: 14px;
+    color: #555;
+    font-weight: 500;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.2sease, color 0.2sease;
+    text-align: right;
+}
+  .border-end {
+    border-left: 1px solid #dee2e6 !important;
+  }
+  .border-end {
+     border-right: unset !important; 
+}
+
+input.check-toggle-round-flat + label:after {
+//  top: 4px;
+left: -6px !important;
+}
+}
+
+body {
+ // font-family: Arial, sans-serif;
+ //font-family: "DIN Next LT Arabic Light";
+  direction: ltr;
+  text-align: left;
+  font-size: 14px;
+  font-family: "DIN Next LT Arabic Light";
+
+}
+.cursor-pointer{
+  cursor: pointer !important;;
+}
+.breadcrumb-item+.breadcrumb-item::before {
+  float: left;
+  padding-right: .5rem;
+  color: #6c757d;
+  content: var(--bs-breadcrumb-divider, "|") /* rtl: var(--bs-breadcrumb-divider, "/") */;
+}
+
+.navbar-nav.ms-auto {
+  font-size: 19px;
+}
+/* Floating animation for shield icon */
+.floating-icon {
+  animation: floating 3s ease-in-out infinite;
+}
+
+@keyframes floating {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
+
+/* Rotating animation for cogs icon */
+.rotating-icon {
+  animation: rotating 8s linear infinite;
+}
+
+@keyframes rotating {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Pulse animation for lock icon */
+.pulse-icon {
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+/* Hover effects */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2) !important;
+}
+
+.hover-glow {
+  transition: all 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 20px rgba(40, 167, 69, 0.5) !important;
+  transform: scale(1.05);
+}
+
+.service-card {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+.hover-list-item {
+  position: relative;
+  padding: 8px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-list-item:hover {
+  color: var(--bs-primary) !important;
+  background: rgba(0, 123, 255, 0.05);
+  border-radius: 4px;
+  border-left: 3px solid var(--bs-primary);
+}
+
+/* Add animate.css classes */
+.animate__animated {
+  animation-duration: 1s;
+}
+
+.animate__delay-1s {
+  animation-delay: 1s;
+}
+
+.animate__delay-2s {
+  animation-delay: 2s;
+}
+.text-muted ,p {
+  color: #555;
+  font-weight: 600;
+  color: #6c757d !important;
+}

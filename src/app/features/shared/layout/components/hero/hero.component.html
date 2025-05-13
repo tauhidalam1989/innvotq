@@ -1,0 +1,33 @@
+<!-- Hero Start -->
+<div *ngIf="showHero" class="container-fluid">
+  <div class="container">
+    <div class="row g-5 pt-3">
+      <!-- Title Section -->
+      <div class="col-lg-6 align-self-center text-center text-lg-start mb-lg-3">
+      
+        <!-- Breadcrumb Section -->
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb justify-content-center justify-content-lg-start mb-0">
+            <li class="breadcrumb-item d-flex align-items-center">
+              <i class="fa fa-home" aria-hidden="true" style="margin-left: 5px;"></i>   <a class="text-bread" style="margin-left: 5px;" routerLink="/">{{ 'HOME' | translate }}</a>
+            </li>
+            <li
+              *ngFor="let breadcrumb of breadcrumbs; let last = last"
+              class="breadcrumb-item"
+              [class.text-white]="!last"
+              [class.active]="last"
+              [attr.aria-current]="last ? 'page' : null"
+            >
+              <a *ngIf="!last" class="text-bread" >{{ breadcrumb.label | translate }}</a>
+              <span *ngIf="last" class="text-bread">{{ replaceHyphen(breadcrumb.label) | translate }}</span>
+            </li>
+          </ol>
+        </nav>
+      </div>
+
+      <!-- Image Section -->
+      
+    </div>
+  </div>
+</div>
+<!-- Hero End -->

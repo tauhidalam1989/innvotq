@@ -1,0 +1,128 @@
+.form-control:read-only {
+    background-color: unset;
+    opacity: 1;
+}
+.spinner-border {
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-width: 0.15em;
+    border-color: white;
+    border-right-color: transparent;
+    border-radius: 50%;
+    animation: spinner-border 0.75s linear infinite;
+  }
+  
+  // White checkmark styling
+  .text-white i {
+    font-size: 1.2rem;
+    color: #fff;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  // Center animation
+  @keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  
+  // Ensure spinner rotation works
+  @keyframes spinner-border {
+    to { transform: rotate(360deg); }
+  }
+  
+  .contact{
+    --tw-text-opacity: 1;
+    color: #7f7f7f;
+    text-align: start;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .border {
+    border: 1.5px solid #1363c6 !important;
+}
+.border-end {
+  border-right:  2px solid #1363c6 !important;
+  @media (max-width: 767.98px) {
+    
+      border-right: unset !important;
+      .text-center {
+        text-align: unset !important;
+    }
+  }
+}
+@media (max-width: 767.98px) {
+    
+  .text-center {
+    text-align: unset !important;
+}
+}
+  .btn-outline-primary {
+    color: #fff;
+    background-color: #1363c6;
+  //  background-color: white;
+    border-color: white;
+}
+  .btn-outline-primary:hover {
+    color: #fff;
+    background-color: #1363c6;
+    border-color: #1363c6;
+}
+p{
+  font-weight: 600;
+}
+
+
+
+.contact-list {
+  list-style-type: none; /* Removes bullet points */
+  padding: 0; /* Removes default padding */
+  margin: 0; /* Removes default margin */
+  word-wrap: break-word; /* Ensures long words break onto the next line */
+}
+
+.contact-list li {
+  margin-bottom: 5px; /* Space between items */
+  font-size: 16px; /* Adjust font size as needed */
+  color: #333; /* Change text color */
+  @media (max-width: 767.98px) {
+    font-size: 14px;
+    }
+
+}
+
+.contact-list li i {
+  margin-right: 8px; /* Space between icon and text */
+  color: #007bff; /* Change icon color */
+}
+/* Media query for mobile view */
+@media (max-width: 768px) {
+  .contact-list {
+      overflow-wrap: break-word; /* Ensure long texts wrap correctly */
+      word-break: break-all; /* Break words if necessary */
+  }
+}
+.list-none {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+.contact-hours {
+  display: flex;
+  align-items: center; /* Center items vertically on larger screens */
+  flex-wrap: wrap; /* Allow wrapping for mobile */
+  
+}
+@media (max-width: 768px) {
+  .contact-hours {
+      flex-direction: column; /* Stack items vertically on mobile */
+      align-items: flex-start; /* Align items to the start */
+      
+  }
+  .contact-hours span {
+      margin-right: 0; /* Remove right margin on mobile */
+      margin-bottom: 4px; /* Add space between stacked items */
+      
+  }
+}
