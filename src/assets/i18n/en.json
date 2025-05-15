@@ -156,11 +156,11 @@
   },
   "FOOTER": {
     "COMPANY_NAME": "Invoteq software solutions pvt Ltd",
-    "DESCRIPTION": "SIIT was established in 2023 in Riyadh, Kingdom of Saudi Arabia. We provide technical solutions and consulting in resource planning for government and private enterprises.",
+    "DESCRIPTION": "SIIT was established in 2023 in Mumbai, India. We provide technical solutions and consulting in resource planning for government and private enterprises.",
     "GET_IN_TOUCH": "Get In Touch",
     "ADDRESS": "Sai Magan Society ltd, 512, 5th floor, Nanda Patkar Road, Vile Parle East-400057",
     "PHONE": "+91 8055884182",
-    "LANDLINE": "+91 8055884182",
+    "LANDLINE": "+91 63071 05486",
     "EMAIL": "info@sharpinnvotech.com",
     "sales":"sales@sharpinnvotech.com",
     "POPULAR_LINKS": "Popular Links",
@@ -216,9 +216,9 @@
     
   },
   "about_page":{
-    "p1":"Welcome to Invoteq software solutions pvt Ltd, a premier IT services and product company based in Saudi Arabia. Founded in 2023 by industry experts, Invoteq software solutions pvt Ltd is dedicated to providing innovative technology solutions that help businesses succeed in an increasingly digital world.",
+    "p1":"Welcome to Invoteq software solutions pvt Ltd, a premier IT services and product company based in India. Founded in 2023 by industry experts, Invoteq software solutions pvt Ltd is dedicated to providing innovative technology solutions that help businesses succeed in an increasingly digital world.",
     "p2":"Our mission is clear: to empower organizations by harnessing the transformative power of technology. By specializing in Artificial Intelligence, Automation, Cybersecurity, Application Services, and Consulting, we design and deliver solutions tailored to meet the unique needs of our clients, ensuring they achieve their business goals with efficiency and security.",
-    "p3":"We are proud to align our vision with Saudi Arabia’s Vision 2030, contributing to the country’s ambitious goals of becoming a global leader in innovation, technology, and economic diversification. Our services are crafted to not only support the growth of our clients but also contribute to the development of a knowledge-based, sustainable economy" 
+    "p3":"We are proud to align our vision with India’s Vision 2030, contributing to the country’s ambitious goals of becoming a global leader in innovation, technology, and economic diversification. Our services are crafted to not only support the growth of our clients but also contribute to the development of a knowledge-based, sustainable economy" 
   },
     
  
@@ -1533,7 +1533,7 @@
           "PCI-DSS (Payment Card Industry Data Security Standard)",
           "NCA - National Cyber Security Authority",
           "GDPR (General Data Protection Regulation)",
-          "SAMA - Saudi Arabia Monetary Authority",
+          "SAMA - India Monetary Authority",
           "Gap assessments to identify compliance deficiencies",
           "Compliance roadmap development",
           "Policy alignment with regulatory frameworks",
