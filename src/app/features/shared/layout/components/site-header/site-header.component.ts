@@ -15,7 +15,7 @@ export class SiteHeaderComponent implements OnInit {
 // Add this property to your component class
 selectedCategory: any = null;
 selectedproduct: any = null;
-  imageSrc: "../../../../../../assets/img/d1.png" | any;
+  imageSrc: "../../../../../../assets/img/Logowhite.png" | any;
   constructor(
     private router: Router,
     public pathService: RoutingService,
@@ -27,7 +27,7 @@ selectedproduct: any = null;
   ngOnInit(): void {
     this.currentLang = this.languageService.getLanguage();
     this.languageService.switchLanguage(this.currentLang);
-    this.imageSrc =  this.currentLang === 'en' ? '../../../../../../assets/img/d1.png' : '../../../../../../assets/img/d2.png';
+    this.imageSrc =  this.currentLang === 'en' ? '../../../../../../assets/img/Logowhite.png' : '../../../../../../assets/img/Logowhite.png';
     
     // Listen for navigation events
     // this.router.events.subscribe((event) => {

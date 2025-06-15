@@ -9,7 +9,7 @@ import { NavigationEnd, Router } from '@angular/router';
   styleUrls: ['./site-footer.component.scss']
 })
 export class SiteFooterComponent {
-  imageSrc: string = 'assets/img/d1.png';
+  imageSrc: string = 'assets/img/Logowhite.png';
   currentYear: number | any;
 
   scrollToTop(): void {
@@ -27,8 +27,8 @@ export class SiteFooterComponent {
       // Function to update image based on language
       const updateImage = () => {
         this.imageSrc = this.translate.currentLang === 'en'
-          ? `assets/img/d1.png?timestamp=${new Date().getTime()}`
-          : `assets/img/d2.png?timestamp=${new Date().getTime()}`;
+          ? `assets/img/Logowhite.png?timestamp=${new Date().getTime()}`
+          : `assets/img/Logowhite.png?timestamp=${new Date().getTime()}`;
         
         this.cdRef.detectChanges(); // Ensure change detection
       };
