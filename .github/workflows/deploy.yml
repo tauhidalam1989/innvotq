@@ -31,6 +31,6 @@ jobs:
           chmod 600 ~/.ssh/id_rsa
           ssh-keyscan -H ${{ secrets.VPS_HOST }} >> ~/.ssh/known_hosts
 
-      - name: 🚀 Deploy Build to VPS
-        run: |
-          scp -r dist/** ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/invoteqsoftsolutions
+  - name: 🚀 Deploy to VPS (flat to root)
+  run: |
+    scp -r dist/invoteq/* ${{ secrets.VPS_USER }}@${{ secrets.VPS_HOST }}:/var/www/invoteqsoftsolutions/
