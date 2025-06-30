@@ -12,11 +12,11 @@ export class SidebarComponent {
     private languageService: LanguageService
   ){}
   @Input() isOpen = false;
-  imageSrc: "../../../../../../assets/img/d1.png" | any;
+  imageSrc: "../../../../../../assets/img/Logowhite.png" | any;
   ngOnInit(): void {
     this.currentLang = this.languageService.getLanguage();
     this.languageService.switchLanguage(this.currentLang);
-    this.imageSrc =  this.currentLang === 'en' ? '../../../../../../assets/img/d1.png' : '../../../../../../assets/img/d2.png';
+    this.imageSrc =  this.currentLang === 'en' ? '../../../../../../assets/img/Logowhite.png' : '../../../../../../assets/img/Logowhite.png';
     
     // Listen for navigation events
     // this.router.events.subscribe((event) => {
@@ -54,7 +54,7 @@ export class SidebarComponent {
     this.currentLang = lang;
     console.log(this.currentLang);
     
-    this.imageSrc =  this.currentLang === 'en' ? '../../../../../../assets/img/d1.png' : '../../../../../../assets/img/d2.png';
+    this.imageSrc =  this.currentLang === 'en' ? '../../../../../../assets/img/Logowhite.png' : '../../../../../../assets/img/Logowhite.png';
     
      
   }
